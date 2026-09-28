@@ -1,0 +1,13 @@
+{
+  "server_url": "https://portal.hanyang.ac.kr/sugang/sulg.do#!UDMyMjEyNyRAXnN1Z2FuZy8kQF4kQF5NMzIwNzc1JEBe7Kad7JuQ7Iug7LKt64K07JetJEBeTTMyMDc3NSRAXjAzMDkwMWJiNWQ4NGY2Y2FiZWZmYzY2YjA0NTRjYjE3ODhjYjE0ODljZDkwMzg0OTE5MmFkZjNmNjEwZTU0MzY=",
+  "target_time": "23:33:00.000",
+  "click_interval_ms": 30,
+  "register_key": "h",
+  "execute_key": "s",
+  "click_queue": [
+    [
+      1108,
+      407
+    ]
+  ]
+}
