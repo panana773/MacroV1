@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 
 from pathlib import Path
+import sys
 
 from typing import Any
 
@@ -34,12 +35,12 @@ DEFAULT_CONFIG: dict[
 class ConfigManager:
     def __init__(self) -> None:
 
-        project_root = (
-            Path(__file__)
-            .resolve()
-            .parent
-            .parent
-        )
+        # PyInstaller one-file extracts source files to a temporary folder.
+        # Keep user settings next to the executable instead.
+        if getattr(sys, "frozen", False):
+            project_root = Path(sys.executable).resolve().parent
+        else:
+            project_root = Path(__file__).resolve().parent.parent
 
         self.data_dir = (
             project_root
